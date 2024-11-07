@@ -21,4 +21,5 @@
     Folllowed by `conda env create -f conda_env.yml` to create the env with this preset
   - Sometimes in conda envs, if there are packages installed at user level (by `pip install --user`), then they take precedence over site-packages within the conda env.
   - This was causing some serious bugs when I was trying to `pip install` packages to conda env, since pip was a locally installed site-package in `~/.local/...` and thust installed any new packages there.
-  
+
+- To delete: `conda remove -n ENV_NAME --all`
