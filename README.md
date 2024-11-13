@@ -1,5 +1,13 @@
 # env-setups
 
+## Macbook Productivity Tools
+- [iterm2](https://iterm2.com/) : Much better terminal experience (still have to try the newer "hot" terminals but this is reliable and tested)
+- [brew.sh](https://brew.sh/) : De facto package manager for Mac
+- [Oh My Zsh](https://ohmyz.sh/#install) : Better terminal experience (auto complete, colouring, plugins, etc.)
+- [Raycast](https://www.raycast.com/) : Supercharged spotlight search (also has clipboard history which is another great windows feature missing on macs).
+- [Rectangle](https://rectangleapp.com/) : Better window management (I still like the way, surprise surprise, windows handles windows and desktop management).
+- [Magic Mouse Fix](https://macmousefix.com/) : Better for mice (mission control, window switching, horizontal scroll, etc.) to bridge gap between regular mice and trackpad / logitech mx master.
+
 ## Conda
 - [https://docs.anaconda.com/miniconda/#quick-command-line-install](https://docs.anaconda.com/miniconda/#quick-command-line-install)
   - Change to the correct platform and cpu arch (eg. replace the x86 installer link from script to aarch64 based installer when working on jetson).
