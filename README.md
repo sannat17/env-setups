@@ -8,6 +8,12 @@
 - [Rectangle](https://rectangleapp.com/) : Better window management (I still like the way, surprise surprise, windows handles windows and desktop management).
 - [Mac Mouse Fix](https://macmousefix.com/) : Better for mice (mission control, window switching, horizontal scroll, etc.) to bridge gap between regular mice and trackpad / logitech mx master.
 
+## Windows Productivity Tools
+- [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
+  - [Command Pallette](https://learn.microsoft.com/en-us/windows/powertoys/#command-palette)
+  - [Keyboard Manager](https://learn.microsoft.com/en-us/windows/powertoys/#keyboard-manager)
+  - [Workspaces](https://learn.microsoft.com/en-us/windows/powertoys/#workspaces)
+
 ## Conda
 - [https://docs.anaconda.com/miniconda/#quick-command-line-install](https://docs.anaconda.com/miniconda/#quick-command-line-install)
   - Change to the correct platform and cpu arch (eg. replace the x86 installer link from script to aarch64 based installer when working on Nvidia Jetson Devices).
@@ -28,6 +34,7 @@
     ```
     Folllowed by `conda env create -f conda_env.yml` to create the env with this preset
   - Sometimes in conda envs, if there are packages installed at user level (by `pip install --user`), then they take precedence over site-packages within the conda env.
-  - This was causing some serious bugs when I was trying to `pip install` packages to conda env, since pip was a locally installed site-package in `~/.local/...` and thus installed any new packages there.
+  - This was causing some serious bugs in one instance when I was trying to `pip install` packages to conda env, but pip was a locally installed site-package in `~/.local/...` and thus installed any new packages there. 
+    - NOTE: This is very esoteric as, in most cases, one would use conda to manage the packages instead of pip.
 
 - To delete: `conda remove -n ENV_NAME --all`
