@@ -30,6 +30,13 @@
   - Tell GPG which terminal to use for the passphrase prompt (if you set a password for key): `[ -f ~/.bashrc ] && echo -e '\nexport GPG_TTY=$(tty)' >> ~/.bashrc`
     - Alternatively, add this whatever shell setup file is being used (zshrc, config.fish, etc.)
 - For pulling from github private repos, use finegrained PAT: https://github.com/settings/personal-access-tokens/new
+  - Common baseline permissions to add (read and write):
+    - Contents: Repository contents, commits, branches, downloads, releases, and merges.
+    - Issues: Issues and related comments, assignees, labels, and milestones.
+    - Metadata: Required
+    - Pull requests: Pull requests and related comments, assignees, labels, milestones, and merges.
+    - Workflows: Update GitHub Action workflow files.
+    - ... more permissions if needed by local tooling to do automatic stuff.
   - [UNSECURE] Optionally, store token locally using `git config --global credential.helper store`. NOTE: Stores the credentials in plaintext in .git-credentials so understand the risk before storing (and only on trusted machine)
 
 ## Conda
