@@ -73,5 +73,9 @@ Note:
   ```
   sudo dnf install fastfetch
   ```
+- Stow - A symlink farm manager for managing dotfiles.
+  ```
+  sudo dnf install stow
+  ```
 ### Wayland (IPR - Instructions and Config TBA)
 Window Manager / Wayland Compositor with Dynamic Tiling. Known for being highly customizable and visually appealing (built-in features like window animations, rounded corners, and blur effects for a more aesthetic desktop experience).
